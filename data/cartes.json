@@ -1,0 +1,65 @@
+{
+    "meta" : {
+        "version":1,
+        "source": "Annexe 2 du rapport du cours LBIRA2230 - Projet interdisciplinaire"
+    },
+
+    "dimensions" : [
+        {"id":"social", "nom" : "Dimension sociale", "definition" : "Concerne les conditions de travail équitables, le bien-être des agriculteurs et des travailleurs, et l'accès à une alimentation saine pour les communautés locales."},
+        {"id":"environnement", "nom" : "Dimension environnementale", "definition" : "Concerne la protection de la nature, la préservation des ressources naturelles (eau, sol, biodiversité) et la réduction de la pollution générée par les activités agricoles.​"},
+        {"id":"economique", "nom" : "Dimension économique", "definition" : "Concerne la rentabilité de l'exploitation, les revenus des agriculteurs, et la viabilité économique à long terme pour permettre à l'exploitation de perdurer."}
+    ],
+
+    "cartes" : [
+        {
+            "id" : 1,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Engager un travailleur à temps plein",
+            "definition" : "Employer une personne toute l'année, en lui versant un salaire stable. Cela crée un emploi et vous aide à faire fonctionner la ferme correctement.",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":2,"economique":-1},
+                "tour2" : {"environnement":0,"social":0,"economique":1}
+            },
+            "exclusions" : [115,11],
+            "justification" : {
+                "environnement":"Neutre",
+                "social":"Amélioration de la charge de travail, du temps de repos et de la qualité de vie de l'exploitant; renforcement de l'emploi local et de l'attractivié de l'exploitation",
+                "economique":"Hausse des charges fixes, entrainant une pression sur la rentabilité MAIS peut devenir neutre ou positif si la main d'oeuvre permet d'augmenter la productivité"
+            }
+        },
+                {
+            "id" : 2,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Engager un travailleur saisonnier",
+            "definition" : "Employer uniquement une personne lors des périodes à forte charge en travail (récoltes, semis, …). Vous diminuez votre charge de travail, mais vous ne créez pas d'emploi durable.",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":1,"economique":1}
+            },
+            "prerequis": { "un_parmi":[41,42]},
+            "justification" : {
+                "environnement":"Amélioration de la gestion du troupeau (santé, détection précoce des mammites, efficacité alimentaire)",
+                "social":"Amélioration des conditions de travail (moins de pénibilité, horaires plus souples)",
+                "economique":"Investissement très lourd, mais gains de productivité, réductions des coûts de main-d'oeuvre et augmentation de la production laitière"
+            }
+        },
+                {
+            "id" : 3,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Investir dans un robot de traite",
+            "definition" : "Vous investissez dans un système de traite automatisée. Cela vous permet de gagner en productivité et vous libère du temps pour d'autres occupations. Attention, le coût d'achat est important.",
+            "effets" : {
+                "tour1" : {"environnement":1,"social":1,"economique":-2},
+                "tour2" : {"environnement":0,"social":0,"economique":3}
+            },
+            "prerequis": { "un_parmi":[41,42]},
+            "justification" : {
+                "environnement":"Amélioration de la gestion du troupeau (santé, détection précoce des mammites, efficacité alimentaire)",
+                "social":"Amélioration des conditions de travail (moins de pénibilité, horaires plus souples)",
+                "economique":"Investissement très lourd, mais gains de productivité, réductions des coûts de main-d'oeuvre et augmentation de la production laitière"
+            }
+        }
+    ]
+}
