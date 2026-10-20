@@ -28,7 +28,7 @@
                 "economique":"Hausse des charges fixes, entrainant une pression sur la rentabilité MAIS peut devenir neutre ou positif si la main d'oeuvre permet d'augmenter la productivité"
             }
         },
-                {
+        {
             "id" : 2,
             "type" : "action",
             "dimension" : "social",
@@ -39,12 +39,12 @@
             },
             "prerequis": { "un_parmi":[41,42]},
             "justification" : {
-                "environnement":"Amélioration de la gestion du troupeau (santé, détection précoce des mammites, efficacité alimentaire)",
-                "social":"Amélioration des conditions de travail (moins de pénibilité, horaires plus souples)",
-                "economique":"Investissement très lourd, mais gains de productivité, réductions des coûts de main-d'oeuvre et augmentation de la production laitière"
+                "environnement":"Neutre",
+                "social":"Améliore la gestion des pics de travail et réduit la surcharge de l’exploitant, impact positif limité sur l'emploi car celui-ci n'est pas stable",
+                "economique":"Charge supplémentaire, mais flexible et proportionné aux besoins"
             }
         },
-                {
+        {
             "id" : 3,
             "type" : "action",
             "dimension" : "social",
@@ -59,6 +59,945 @@
                 "environnement":"Amélioration de la gestion du troupeau (santé, détection précoce des mammites, efficacité alimentaire)",
                 "social":"Amélioration des conditions de travail (moins de pénibilité, horaires plus souples)",
                 "economique":"Investissement très lourd, mais gains de productivité, réductions des coûts de main-d'oeuvre et augmentation de la production laitière"
+            }
+        },
+        {
+            "id" :4,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Rejoindre un circuit-court",
+            "definition" : "Pour éviter d'être dépendant des grossistes qui imposent leur prix d'achat, vous décidez de rejoindre un circuit court de vente. Cela renforce la coopération entre agriculteurs et améliore le lien avec les consommateurs.",
+            "effets" : {
+                "tour1" : {"environnement":1,"social":1,"economique":1},
+            },
+            "exclusions" : [115],
+            "justification" : {
+                "environnement":"Réduction des distances de transport (moindre empreinte carbone)",
+                "social":"Renforcement du lien avec les consommateurs et le territoire, amélioration de l'image de l'agriculture, de la transparence et de la confiance avec la société",
+                "economique":"Investissemens en temps et en organisation (mise en place, logistique, communication) mais meilleure valeur ajoutée par produit, sécurisation des débouchés et réduction de la dépendance aux intermédiaires"
+            }
+        },
+        {
+            "id" :5,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Rejoindre une coopérative d'achats d'intrants",
+            "definition" : "Vous décidez de vous associer avec d'autres agriculteurs pour acheter ensemble vos intrants (engrais, pesticides, …). Cela vous permet d'avoir plus de poids dans les négociations et d'ainsi diminuer les prix d'achats.",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":2,"economique":2},
+            },
+            "justification" : {
+                "environnement":"Pas d'effet direct sur les pratiques de gestion des ressources",
+                "social":"Renforce la coopération et la dynamique entre agriculteurs",
+                "economique":"Baisse des coûts grâce à un meilleur pouvoir de négociation, améliore la stabilité économique et l'autonomie vis-à-vis des fournisseurs"
+            }
+        },
+        {
+            "id" :6,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Rejoindre une coopérative d'utilisation de matériel agricole",
+            "definition" : "Une CUMA est une Coopérative d'Utilisation du Matériel Agricole (tracteurs, outils, etc). Vous décidez de vous associer avec d'autres agriculteurs pour mutualiser l'achat de matériel agricole. ",
+            "effets" : {
+                "tour1" : {"environnement":1,"social":1,"economique":-1},
+                "tour2" : {"environnement":0,"social":1,"economique":2}
+            },
+            "justification" : {
+                "environnement":"L'accès à du matériel moderne et plus performant peut réduire l'usage d'intrants et améliorer l'efficacité énergétique, réduction du matériel redondant",
+                "social":"Facilite le travail et réduit la charge pour l'exploitant, renforce la coopération locale",
+                "economique":"Diminutions des coûts d'investissement individuel, améliore l'efficacité économique et la résilience financière"
+            }
+        },
+        {
+            "id" :7,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Rejoindre une coopérative de vente de la production",
+            "definition" : "Pour avoir plus de poids dans les négociations du prix de vente et pour faciliter la vente de vos productions, vous vous associez avec d'autres agriculteurs dans une coopérative afin de vendre vos produits.",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":2,"economique":2},
+            },
+            "justification" : {
+                "environnement":"Pas d'effet direct sur les pratiques environnementales sauf si la coopérative met en place un cahier des charges",
+                "social":"Renforce le lien entre producteurs et consommateurs, améliore la visibilité sociale de l'exploitation, consolidation des réseaux locaux et valorisation de l’agriculture de proximité",
+                "economique":"Sécurisation des débouchés et meilleure valeur ajoutée, réduction de la dépendance aux intermédiaires et stabilité économique"
+            }
+        },
+        {
+            "id" :8,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Vente à la ferme",
+            "definition" : "Vous décidez de vendre vos produits directement à la ferme pour vous rapprocher de vos consommateurs et avoir une meilleure maîtrise du prix de vente.",
+            "effets" : {
+                "tour1" : {"environnement":1,"social":2,"economique":1},
+            },
+            "justification" : {
+                "environnement":"Réduction des distances de transport (moindre empreinte carbone)",
+                "social":"Améliore le lien direct avec les consommateurs et la reconnaissance sociale de l'exploitation, renforce l'image et la confiance dans le tissu local",
+                "economique":"Valorisation directe des produits, stabilisation des revenus"
+            }
+        },
+        {
+            "id" :9,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Ferme pédagogique",
+            "definition" : "Vous ouvrez votre ferme aux écoles et au public. Vous espérez ainsi que les consommateurs comprendront mieux votre réalité. Attention, veillez à être suffisamment disponible pour vos autres activités.",
+            "effets" : {
+                "tour1" : {"environnement":1,"social":2,"economique":0},
+            },
+            "exclusions" : [115],
+            "justification" : {
+                "environnement":"Encourage une amélioration des pratiques pour être cohérent avec la vocation éducative",
+                "social":"Renforce le lien social, améliore l'image de l'exploitation",
+                "economique":"Demande des investissements et du temps mais créé un revenu complémentaire stable et moins dépendant des marchés agricoles"
+            }
+        },
+        {
+            "id" :10,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Rejoindre un réseau de partage de connaissance/de conseil agricole",
+            "definition" : "Pour vous, le progrès en agriculture passe nécessairement par le partage des expériences et connaissances. Ce réseau d'agriculteurs sera l'occasion pour vous d'accroître vos connaissances et celles des autres.",
+            "effets" : {
+                "tour1" : {"environnement":1,"social":2,"economique":1},
+            },
+            "exclusions" : [115],
+            "justification" : {
+                "environnement":"Accès à des conseils techniques pouvant améliorer la gestion des intrants du sol ou du troupeau, diffusion de pratiques agroécologiques",
+                "social":"Renforce l'intégration dans un collectif professionnel et réduit l'isolement, confiance accrue entre acteurs agricoles",
+                "economique":"Amélioration de l'efficacité de l'exploitation, conseils permettant d'éviter des erreurs techniques coûteuses"
+            }
+        },
+        {
+            "id" :11,
+            "type" : "action",
+            "dimension" : "social",
+            "titre" : "Faire appel au service de remplacement",
+            "definition" : "Service vous remplacant temporairement sur votre ferme en cas de maladie. Vous pouvez aussi y avoir recours (payant) pour partir en vacances.",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":2,"economique":-1},
+            },
+            "exclusions" : [1,2],
+            "justification" : {
+                "environnement":"Pas d'impact sur les pratiques",
+                "social":"Amélioration du bien-être de l'exploitant (repos, congés, imprévus)",
+                "economique":"Coût du service (charge financière supplémentaire ponctuelle)"
+            }
+        },
+        {
+            "id" :21,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Diversification des cultures",
+            "definition" : "Pour ne plus dépendre d'une seule production principale et réduire votre exposition aux crises, vous décidez de cultiver plusieurs types de plantes différentes. Cela permet aussi de réduire la pression des maladies.",
+            "effets" : {
+                "tour1" : {"environnement":1,"social":1,"economique":2},
+            },
+            "exclusions" : [22],
+            "justification" : {
+                "environnement":"Meilleure gestion des sols, réduction des risques phytosanitaires, amélioration durable de la résilience agroécologique et de la fertilité",
+                "social":"Image positive auprès du public",
+                "economique":"Réduction du risque économique et amélioration de la stabilité des revenus, meilleure résilience face aux aléas climatiques et de marché"
+            }
+        },
+        {
+            "id" :22,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Rotation courte des cultures",
+            "definition" : "Le temps de rotation est le temps avant le retour d'une même culture dans un champ. Pour simplifier votre organisation, vos successions de culture sont courtes et peu diversifiées. Attention à l'épuisement de vos sols.",
+            "effets" : {
+                "tour1" : {"environnement":-1,"social":0,"economique":0},
+            },
+            "exclusions" : [43,51,52],
+            "justification" : {
+                "environnement":"Baisse de la diversité temporelle des cultures, risque accru de pression maladies, adventices et ravageurs, dégradation de la fertilité des sols, pression accrue sur les intrants",
+                "social":"Pas d'effet",
+                "economique":"Simplification de l'organisation technique mais augmentation des coûts de protection phytosanitaire et moindre résilience économique, vulnérabilité face aux marchés, maladies ou autres menaces"
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
+            }
+        },
+        {
+            "id" :,
+            "type" : ".",
+            "dimension" : ".",
+            "titre" : ".",
+            "definition" : ".",
+            "effets" : {
+                "tour1" : {"environnement":0,"social":0,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":0}
+            },
+            "exclusions" : [],
+            "justification" : {
+                "environnement":".",
+                "social":".",
+                "economique":"."
             }
         }
     ]
