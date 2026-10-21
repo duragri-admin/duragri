@@ -658,309 +658,61 @@
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :201,
+            "type" : "atout",
+            "titre" : "Renforcement de la PAC en faveur de l'environnement",
+            "definition" : "Nouvelles politiques mettant en place des primes pour toutes actions environnementales, tel que la mise en place de haies, de bandes non-productives ou encore de CIPAN. Pioche le double de cartes du résultat du dé.",
+            "effet_special" : "Pioche le double de cartes du résultat du dé"
+        },
+        {
+            "id" :202,
+            "type" : "atout",
+            "titre" : "Conditions météo favorable du semis à la récolte",
+            "definition" : "Une année n’est pas l’autre mais celle-ci restera dans les mémoires comme l’année de tous les records, tant les récoltes ont été exceptionnelles. ",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":1,"economique":2}
             },
-            "exclusions" : [],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Croissance accrue des cultures et autres mesures agro-environnementales, vigeur accrue des cultures, diminution de la pression en maladies",
+                "social":"Diminution du stress de l'agriculteur, sentiment de réussite",
+                "economique":"Augmentation des rendements, hausse du revenu, augmentation de la capacité d'investissements"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :203,
+            "type" : "atout",
+            "titre" : "Automne favorable",
+            "definition" : "La fin de saison et l’automne sont relativement secs cette année. Cela vous permet de facilement semer vos couverts et cultures d’hiver. Un semis dans de bonnes conditions est le premier pas vers de bons rendements.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":2,"social":0,"economique":1}
             },
-            "exclusions" : [],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Augmentation de la protection du sol, limitation de l'érosion, amélioration de la structure du sol, augmentation de la biodiversité fonctionnelle",
+                "social":"Diminution du stress de l'agriculteur",
+                "economique":"Augmentation du potentiel de rendement, diminution d'éventuels surcoûts liés aux reprises de semis et échecs de culture"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :204,
+            "type" : "atout",
+            "titre" : "Héritage innatendu",
+            "definition" : "Quel surprise de recevoir ce courrier du notaire t’annonçant l’héritage de dix hectares ! Tu ne t’y attendais pas. Mais qui était cette fameuse tante Astrid ?",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":0,"social":1,"economique":2}
             },
-            "exclusions" : [],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Pas de changement de pratiques",
+                "social":"Potentiel de création d'emploi, renforce le statut de l'exploitation",
+                "economique":"Augmentation du potentiel de production sans coût d'achat du foncier"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :205,
+            "type" : "atout",
+            "titre" : "Année normale",
+            "definition" : "Il ne se passe rien de spécial, et parfois ce n’est pas si mal.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
-        },
-        {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "tour1" : {"environnement":0,"social":0,"economique":0}
             }
         }
     ]
