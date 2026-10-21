@@ -68,7 +68,7 @@
             "titre" : "Rejoindre un circuit-court",
             "definition" : "Pour éviter d'être dépendant des grossistes qui imposent leur prix d'achat, vous décidez de rejoindre un circuit court de vente. Cela renforce la coopération entre agriculteurs et améliore le lien avec les consommateurs.",
             "effets" : {
-                "tour1" : {"environnement":1,"social":1,"economique":1},
+                "tour1" : {"environnement":1,"social":1,"economique":1}
             },
             "exclusions" : [115],
             "justification" : {
@@ -84,7 +84,7 @@
             "titre" : "Rejoindre une coopérative d'achats d'intrants",
             "definition" : "Vous décidez de vous associer avec d'autres agriculteurs pour acheter ensemble vos intrants (engrais, pesticides, …). Cela vous permet d'avoir plus de poids dans les négociations et d'ainsi diminuer les prix d'achats.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":2,"economique":2},
+                "tour1" : {"environnement":0,"social":2,"economique":2}
             },
             "justification" : {
                 "environnement":"Pas d'effet direct sur les pratiques de gestion des ressources",
@@ -115,7 +115,7 @@
             "titre" : "Rejoindre une coopérative de vente de la production",
             "definition" : "Pour avoir plus de poids dans les négociations du prix de vente et pour faciliter la vente de vos productions, vous vous associez avec d'autres agriculteurs dans une coopérative afin de vendre vos produits.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":2,"economique":2},
+                "tour1" : {"environnement":0,"social":2,"economique":2}
             },
             "justification" : {
                 "environnement":"Pas d'effet direct sur les pratiques environnementales sauf si la coopérative met en place un cahier des charges",
@@ -130,7 +130,7 @@
             "titre" : "Vente à la ferme",
             "definition" : "Vous décidez de vendre vos produits directement à la ferme pour vous rapprocher de vos consommateurs et avoir une meilleure maîtrise du prix de vente.",
             "effets" : {
-                "tour1" : {"environnement":1,"social":2,"economique":1},
+                "tour1" : {"environnement":1,"social":2,"economique":1}
             },
             "justification" : {
                 "environnement":"Réduction des distances de transport (moindre empreinte carbone)",
@@ -145,7 +145,7 @@
             "titre" : "Ferme pédagogique",
             "definition" : "Vous ouvrez votre ferme aux écoles et au public. Vous espérez ainsi que les consommateurs comprendront mieux votre réalité. Attention, veillez à être suffisamment disponible pour vos autres activités.",
             "effets" : {
-                "tour1" : {"environnement":1,"social":2,"economique":0},
+                "tour1" : {"environnement":1,"social":2,"economique":0}
             },
             "exclusions" : [115],
             "justification" : {
@@ -161,7 +161,7 @@
             "titre" : "Rejoindre un réseau de partage de connaissance/de conseil agricole",
             "definition" : "Pour vous, le progrès en agriculture passe nécessairement par le partage des expériences et connaissances. Ce réseau d'agriculteurs sera l'occasion pour vous d'accroître vos connaissances et celles des autres.",
             "effets" : {
-                "tour1" : {"environnement":1,"social":2,"economique":1},
+                "tour1" : {"environnement":1,"social":2,"economique":1}
             },
             "exclusions" : [115],
             "justification" : {
@@ -177,7 +177,7 @@
             "titre" : "Faire appel au service de remplacement",
             "definition" : "Service vous remplacant temporairement sur votre ferme en cas de maladie. Vous pouvez aussi y avoir recours (payant) pour partir en vacances.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":2,"economique":-1},
+                "tour1" : {"environnement":0,"social":2,"economique":-1}
             },
             "exclusions" : [1,2],
             "justification" : {
@@ -193,7 +193,7 @@
             "titre" : "Diversification des cultures",
             "definition" : "Pour ne plus dépendre d'une seule production principale et réduire votre exposition aux crises, vous décidez de cultiver plusieurs types de plantes différentes. Cela permet aussi de réduire la pression des maladies.",
             "effets" : {
-                "tour1" : {"environnement":1,"social":1,"economique":2},
+                "tour1" : {"environnement":1,"social":1,"economique":2}
             },
             "exclusions" : [22],
             "justification" : {
@@ -209,7 +209,7 @@
             "titre" : "Rotation courte des cultures",
             "definition" : "Le temps de rotation est le temps avant le retour d'une même culture dans un champ. Pour simplifier votre organisation, vos successions de culture sont courtes et peu diversifiées. Attention à l'épuisement de vos sols.",
             "effets" : {
-                "tour1" : {"environnement":-1,"social":0,"economique":0},
+                "tour1" : {"environnement":-1,"social":0,"economique":0}
             },
             "exclusions" : [43,51,52],
             "justification" : {
@@ -219,173 +219,166 @@
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :23,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Fertilisation minérale utilisée à dose pleine",
+            "definition" : "Vous faites le choix des engrais de synthèse fabriqués en usine car ils permettent de nourrir plus rapidement vos plantes et facilitent votre gestion des cultures. Cette solution est efficace mais augmente le risque de pollution.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":-2,"social":-1,"economique":1},
+                "tour2" : {"environnement":0,"social":0,"economique":-2}
             },
-            "exclusions" : [],
+            "exclusions" : [16,51],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Emission liée à la fabrication et l'usage des engrais azotés, pollution aux nitrates des eaux",
+                "social":"Opposition aux attentes sociétales (qualité de l'eau, climat)",
+                "economique":"Assure des rendements élevés à court-terme mais dépendance aux engrais et vulnérabilité face aux prix"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :24,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Fertilisation minérale raisonnée",
+            "definition" : "Pour diminuer votre utilisation d'engrais, vous mettez plusieurs pratiques en place pour calculer la quantité exacte à apporter à chaque culture. Cela vous permet de ne pas apporter plus de fertilisation que nécessaire.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":0,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [23,51],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Limitation des excès grâce à une gestion raisonnée, préservation progressive de la fertilité du sol",
+                "social":"Pas d'effet",
+                "economique":"Réduction des coûts grâce à une meilleure utilisation des engrais, stabilisation de la marge et réduction du risque économique"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :25,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Mise en place de CIPAN",
+            "definition" : "Les Cultures Intermédiaires Pièges A Nitrates sont semées entre deux cultures pour capter les restes d'engrais et éviter qu'ils ne polluent l'eau. Ce dernier sera rendu disponible pour la culture suivante, réduisant les besoins d'apports futurs.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":1,"economique":1},
+                "tour2" : {"environnement":1,"social":0,"economique":1}
             },
-            "exclusions" : [],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Réduction du lessivage de l'azote, limitation de l'érosion, amélioration de la structure du sol, augmentation de la matière organique, contribution à la biodiversité fonctionnelle",
+                "social":"Valorisation de l'image environnementale",
+                "economique":"Coûts supplémentaires mais amélioration de la fertilité, rédution des pertes d'azote, meilleure résilience des cultures"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :26,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Obtention d'un label de qualité différencié",
+            "definition" : "Vous choisissez de produire selon un cahier des charges précis garantissant une qualité supérieure. Cela augmente vos contraintes de gestion de la ferme, mais vous pouvez ainsi vendre vos produits à un meilleur prix.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":1,"economique":0},
+                "tour2" : {"environnement":0,"social":0,"economique":1}
             },
-            "exclusions" : [],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Cahier des charges pouvant exiger des pratiques plus durables (réduction d'intrants, respect sols, …)",
+                "social":"Reconnaissance accrue de l'exploitation, renforce le lien avec les consommateurs, valorisation d'un patrimoine technique, amélioration de l'image",
+                "economique":"Coûts adminstratifs et mise en oeuvre  mais meilleure valorisation des produits, différenciation sur le marché"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :27,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Augmentation de la superficie cultivée",
+            "definition" : "Vous agrandissez votre ferme en achetant plus de terres pour augmenter votre production et vos revenus. Cependant cette opération a un coût important et ne sera gagnante qu'à très long terme.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":0,"social":0,"economique":-1},
+                "tour2" : {"environnement":0,"social":0,"economique":-1}
             },
-            "exclusions" : [],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Statu quo en termes de pratiques",
+                "social":"Augmentation de la charge de travail mais peu justifier l'emploi d'un salarié",
+                "economique":"Coût d'achat de terrain agricole très élevé par rapport à la marge brute annuelle"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :28,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Choix de plantes plus productives",
+            "definition" : "Vous choisissez des variétés modernes qui donnent de plus grands rendements. Cela permet d'augmenter la production, mais demande plus d'intrants (engrais, eau, pesticides, soin).",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":0,"social":0,"economique":1},
+                "tour2" : {"environnement":-1,"social":0,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [48,51],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"A long terme, cela demande plus d'intrants et diminue la diversité génétique",
+                "social":"Pas d'effet",
+                "economique":"Augmentation du rendement potentiel, production plus élevée"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :29,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Acquisition de nouvelles machines",
+            "definition" : "Vous décidez d'acheter du matériel agricole plus moderne (tracteur, semoir, robot…). Bien que coûteuses, ces machines vous permettront de travailler plus vite, avec plus de précision et parfois moins de main-d’œuvre.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":1,"economique":-2},
+                "tour2" : {"environnement":0,"social":0,"economique":2}
             },
-            "exclusions" : [],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Réduction de l'usage des intrants grâce à une meilleure utilisation, moins de tassement des sols, meilleure gestion des cultures",
+                "social":"Amélioration des conditions de travail (moindre pénibilité, meilleure sécurité)",
+                "economique":"Investissement lourd mais gain de productivité et d'efficience"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :30,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Désherbage mécanique",
+            "definition" : "Vous décidez d’éliminer les mauvaises herbes à l’aide d’outils mécaniques (bineuse, herse, houe…) plutôt qu’avec des produits chimiques. Cela protège l’environnement et préserve la santé du sol.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":2,"social":1,"economique":0}
             },
-            "exclusions" : [],
+            "exclusions" : [32],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Réduction de l'usage d'herbicides, amélioration de la biodiversité fonctionnelle, amélioration de la santé des sols",
+                "social":"Amélioration de l'image auprès des consommateurs",
+                "economique":"Coût d'achat d'outils mais réduction de la facture d'herbicide, moindre dépendance aux intrants chimiques"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :31,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Construction d'une unité de Biométhanisation",
+            "definition" : "La Biométhanisation transforme les déchets agricoles (fumier, résidus de cultures) en énergie renouvelable (biogaz). Elle produit aussi comme déchet un engrais très utile pour vos cultures.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":0,"economique":-2},
+                "tour2" : {"environnement":0,"social":0,"economique":2}
             },
-            "exclusions" : [],
+            "prerequis": { "un_parmi":[41,42]},
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Valorisation des effluents d'élevage, réduction du risque de pollution de l'eau et de l'air, réduction des émissions de GES via production d'énergie renouvelable, augmentation de l'autonomie énergétique de l'exploitation",
+                "social":"Possible production d'énergie locale",
+                "economique":"Investissement lourd mais amélioration de la résilience économique et indépendance énergétique"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :32,
+            "type" : "action",
+            "dimension" : "economique",
+            "titre" : "Utilisation des phytos à dose pleine",
+            "definition" : "Les produits phytopharmaceutiques sont utilisés pour protéger les plantes des maladies. La législation définie les quantités maximales. Vous décidez donc d'appliquer ces quantités maximales afin de vous assurer la plus grande protection des plantes en suivant une logique économique.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":-2,"social":0,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [30,50,51],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Pression sur la biodiversité fonctionnelle, risque de pollution de l'eau, de l'air et d'effets sur les sols, risque de résistance",
+                "social":"Risque pour les travailleurs lors des applications",
+                "economique":"Sécurisation de la production"
             }
         },
         {
