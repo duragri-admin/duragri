@@ -599,88 +599,62 @@
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :101,
+            "type" : "contrainte",
+            "titre" : "Epizootie bovine",
+            "definition" : "Une maladie soudaine touche les bovins de la région. Ceux-ci sont malades et leur production diminue.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":0,"social":-2,"economique":-3}
             },
-            "exclusions" : [],
+            "prerequis": { "un_parmi":[41,42]},
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Recours accru aux médicaments vétérinaires",
+                "social":"Bien-être animal dégradé, charge mentale et physique pour l'éleveur, possible image négative vis-à-vis de la société",
+                "economique":"Diminution de la production, augmentation des frais vétérinaires, pertes de revenus et risque d'endettement"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :102,
+            "type" : "contrainte",
+            "titre" : "Epidémie sur votre culture principale",
+            "definition" : "Une nouvelle maladie est arrivée dans la région. Celle-ci ravage votre culture principale, elle est détruite.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":-1,"social":-1,"economique":-3}
             },
-            "exclusions" : [],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Augmentation de l'usage des produits phytosanitaires, diminution de la production de biomasse",
+                "social":"Stress pour l'exploitant",
+                "economique":"Perte de revenu, augmentation des coûts des produits phytosanitaires"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :103,
+            "type" : "contrainte",
+            "titre" : "Sécheresse",
+            "definition" : "Sans eau, les plantes n’arrivent pas à pousser. Celle-ci manque cruellement cette année et vos rendements en souffrent.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":-1,"social":-1,"economique":-2}
             },
-            "exclusions" : [],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Baisse de la fertilité des sols, pression accrue sur la ressource en eau (irrigation)",
+                "social":"Stress pour l'exploitant",
+                "economique":"Diminution des rendements, augmentation possible des charges (irrigation)"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
-            "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
-            }
+            "id" :104,
+            "type" : "contrainte",
+            "titre" : "Changement climatique",
+            "definition" : "Si vous voulez vous adapter face au changement climatique, il faut agir vite. Le temps de décision passe de 5 à 3 minutes pour ce tour.",
+            "effet_special":"Diminution du temps de décision"
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :105,
+            "type" : "contrainte",
+            "titre" : "Année normale",
+            "definition" : "Il ne se passe rien de spécial, et parfois ce n’est pas si mal.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
-            },
-            "exclusions" : [],
-            "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "tour1" : {"environnement":0,"social":0,"economique":0}
             }
         },
         {
