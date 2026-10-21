@@ -382,224 +382,220 @@
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :41,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Introduction de l'élevage (extensif)",
+            "definition" : "En complément de vos cultures, vous optez pour un élevage extensif, reposant sur les pâturages naturels. Moins productif mais plus durable, il fournit un engrais organique de qualité tout en respectant mieux l’environnement.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":1,"economique":-1},
+                "tour2" : {"environnement":1,"social":0,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [42],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Fertilisation organique, diversité paysagère et des rotations, restauration de prairies permanentes et introduction de prairies temporaires, stockage de carbone, réduction de l'érosion",
+                "social":"Effets sur les paysages, paturâge des animaux",
+                "economique":"Investissements de départ, diversification des revenus, résilience économique (moindre dépendance au marché des intrants)"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :42,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Introduction de l'élevage (intensif)",
+            "definition" : "En complément de vos cultures, vous pratiquez un élevage intensif à forte densité animale. Il demande une gestion stricte mais offre une production élevée et de l’engrais organique pour vos cultures.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":-1,"social":-1,"economique":1},
+                "tour2" : {"environnement":0,"social":0,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [41],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Besoins en aliments concentrés, pression sur les sols et les flux d'azote, pression sur la qualité de l'air (NH3), faible autonomie alimentaire",
+                "social":"Image de l'exploitation auprès des consommateurs",
+                "economique":"Investissements de départ, économie d'échelle, dépendance aux intrants, production à grand échelle"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :43,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Introduction de l'Agroforesterie",
+            "definition" : "Vous choississez de vous lancer dans l'Agrogoresterie. Vous plantez des bandes de haies et d'arbres au milieu de vos champs. A court terme, cela représente un manque à gagner, mais à long terme, vous gagnerez en résilience et pourrez même revendre le bois.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":1,"economique":-1},
+                "tour2" : {"environnement":1,"social":0,"economique":2}
             },
-            "exclusions" : [],
+            "exclusions" : [22,46],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Augmentation de la biodiversité fonctionnelle, stockage de carbone, augmentation de la résilience, amélioration de la qualité de l'eau, diminution de la pression en maladie",
+                "social":"Effets sur le paysage, perception positive par la société",
+                "economique":"Coûts d'implantation, diversification des revenus, amélioration de la résistance face aux aléas climatiques, potentiel accès à des lables, primes ou filières spécifiques"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :44,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Achat d'un semoir de semis direct",
+            "definition" : "Le semoir de semis direct permet de semer sans travail du sol (labour ou autre). Ce semoir a un coût important à l'achat mais protége le sol et réduit le travail mécanique.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":0,"economique":-1},
+                "tour2" : {"environnement":0,"social":0,"economique":2}
             },
-            "exclusions" : [],
+            "exclusions" : [47],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Limitation de l'érosion, amélioration de la structure des sols, augmentation de la biodiversité fonctionnelle, diminution de la consommation de carburant",
+                "social":"Diminution du temps de travail lié au travail du sol mais besoin de compétences techniques",
+                "economique":"Coûts d'investissement, réduction des charges de mécanisation"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :45,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Nouvel outil pour travail du sol simplifié (TCS)",
+            "definition" : "Au moment de renouveller votre équipement, vous décidez d'opter pour un outil vous permettant de limiter l'impact de cet outil sur le sol.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":2,"social":0,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [47],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Amélioration de la structure du sol, augmentation de la biodiversité fonctionnelle, limitation de l'érosion, diminution de la consommation de carburant",
+                "social":"Diminution du temps de travail lié au travail du sol ",
+                "economique":"Coûts d'investissement, réduction des charges de mécanisation et de carburant"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :46,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Mise en place de zones non productives (bandes fleuries, zones enherbées, haies)",
+            "definition" : "Vous décidez de ne pas cultiver certaines zones de vos champs pour y laisser pousser des plantes sauvages et des fleurs, ce qui représente un abri pour la faune.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":0,"social":1,"economique":0},
+                "tour2" : {"environnement":2,"social":0,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [46],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Amélioration de la biodiversité fonctionnelle, réduction potentielle de la dérive des produits phytos et du ruissellement",
+                "social":"Effets sur le paysage, perception positive par la société",
+                "economique":"Pertes de surface productive, possibilité d'économie d'intrants, augmentation de la résilience"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :47,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Labour",
+            "definition" : "Travail profond du sol permettant de bien enfouir les résidus et les adventices (“mauvaises herbes”) mais augmentant l’érosion et la perte de matière organique.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":-1,"social":0,"economique":-1}
             },
-            "exclusions" : [],
+            "exclusions" : [44,45],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Perturbation de la structure du sol, risque d'érosion, diminution de la vie biologique du sol",
+                "social":"Pas d'effets",
+                "economique":"Meilleur contrôle des adventices mais coût en temps et carburant élevé, baisse de la productivité lié à la dégradation des sols"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :48,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Choix de plantes résistantes",
+            "definition" : "Vous décidez d'utiliser des variétés plus résistantes aux maladies et s'adaptant aux conditions météo difficiles. Ces variétés, souvent anciennes, demandent moins d'engrais et pesticides, mais présentent des rendements moins élevés",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":2,"social":0,"economique":0}
             },
-            "exclusions" : [],
+            "exclusions" : [28],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Réduction de l'usage des produits phytosanitaires, amélioration de la résilience du système",
+                "social":"Possible image positive auprès de la société et valorisation de pratiques plus durables",
+                "economique":"Diminution des coûts liés aux traitements phytosanitaires mais plantes moins productives, rendements plus stables"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :49,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Couverture permanente du sol",
+            "definition" : "Vous gardez le plus possible votre sol couvert au moyen de couverts végétaux entre deux cultures, pour protéger le sol de l'érosion et améliorer sa fertilité.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":0,"economique":0},
+                "tour2" : {"environnement":1,"social":0,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [47],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Réduction de l'érosion, meilleure protection du sol contre le lessivage et le ruissellement, amélioration de la structure du sol, augmentation de la biodiversité fonctionnelle",
+                "social":"Possible image positive auprès de la société et valorisation de pratiques plus durables",
+                "economique":"Coûts supplémentaires mais réduction des coûts de fertilisation, augmentation de la résilience"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :50,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Utilisation raisonnée des phytos",
+            "definition" : "Les produits phytopharmaceutiques sont utilisés pour protéger les plantes des maladies. Vous décidez de ne traiter vos cultures qu'en derniers recours, une fois que tous les autres moyens de lutte se sont révélés inefficaces, et ce pour protéger la biodiversité, votre santé et éviter une pollution inutile.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":1,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [32,51],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Diminution des impacts sur les sols, l'eau et la biodiversité",
+                "social":"Amélioration de la sécurité sanitaire pour l'agriculteur et les riverains, meilleure image auprès de la société et des consommateurs",
+                "economique":"Diminution des coûts liés aux traitements phytosanitaires, moindre dépendance aux intrants chimiques"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :51,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Conversion à l'agriculture biologique",
+            "definition" : "Vous vous convertissez à l'Agriculture Biologique. Vous échangez les intrants chimiques avec d'autres naturels. Cela va améliorer la santé des sols et la biodiversité. Attention, une adaptation technique va être nécessaire.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":2,"social":1,"economique":-1},
+                "tour2" : {"environnement":0,"social":0,"economique":1}
             },
-            "exclusions" : [],
+            "exclusions" : [23,24,32,50],
+            "prerequis": { "tous":[24,50]},
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Diminution des impacts sur les sols, l'eau et la biodiversité, meilleure résilience des agroécosystèmes",
+                "social":"Meilleure image de l'exploitation, renforcement du lien avec les consommateurs",
+                "economique":"Baisse possible de rendements, phase de transition mais à terme, prix de vente plus élevé, réduction de la charge en intrants, meilleure autonomie"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :52,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Rotation longue des cultures",
+            "definition" : "Le temps de rotation est le temps avant le retour d'une même culture dans un champ. Pour réduire la pression sur le sol et les maladies, vous augmentez la diversité de vos cultures.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":0,"social":0,"economique":1},
+                "tour2" : {"environnement":1,"social":0,"economique":0}
             },
-            "exclusions" : [],
+            "exclusions" : [22],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Amélioration de la structure du sol, diminution de la pression en maladies et adventices",
+                "social":"Pas d'effets",
+                "economique":"Réduction des coûts d'intrants, diversification des productions, meilleure résilience"
             }
         },
         {
-            "id" :,
-            "type" : ".",
-            "dimension" : ".",
-            "titre" : ".",
-            "definition" : ".",
+            "id" :53,
+            "type" : "action",
+            "dimension" : "environnement",
+            "titre" : "Cultures associés",
+            "definition" : "Vous décidez de faire pousser plusieurs plantes différentes sur le même champ au même moment (par exemple céréales + légumineuses). Ces cultures vont avoir des bénéfiques l'une sur l'autre.",
             "effets" : {
-                "tour1" : {"environnement":0,"social":0,"economique":0},
-                "tour2" : {"environnement":0,"social":0,"economique":0}
+                "tour1" : {"environnement":1,"social":1,"economique":0}
             },
-            "exclusions" : [],
+            "exclusions" : [22],
             "justification" : {
-                "environnement":".",
-                "social":".",
-                "economique":"."
+                "environnement":"Augmentation de la biodiversité fonctionnelle, augmentation de la résilience, diminution de la pression en maladie",
+                "social":"Besoin en compétences techniques",
+                "economique":"Surcoût lié à la gestion des cultures, meilleure résilience des cultures"
             }
         },
         {
