@@ -21,7 +21,7 @@
                 "tour1" : {"environnement":0,"social":2,"economique":-1},
                 "tour2" : {"environnement":0,"social":0,"economique":1}
             },
-            "exclusions" : [115,11],
+            "exclusions" : [11],
             "justification" : {
                 "environnement":"Neutre",
                 "social":"Amélioration de la charge de travail, du temps de repos et de la qualité de vie de l'exploitant; renforcement de l'emploi local et de l'attractivié de l'exploitation",
@@ -37,7 +37,7 @@
             "effets" : {
                 "tour1" : {"environnement":0,"social":1,"economique":1}
             },
-            "prerequis": { "un_parmi":[41,42]},
+            "exclusions" : [11],
             "justification" : {
                 "environnement":"Neutre",
                 "social":"Améliore la gestion des pics de travail et réduit la surcharge de l’exploitant, impact positif limité sur l'emploi car celui-ci n'est pas stable",
@@ -70,7 +70,6 @@
             "effets" : {
                 "tour1" : {"environnement":1,"social":1,"economique":1}
             },
-            "exclusions" : [115],
             "justification" : {
                 "environnement":"Réduction des distances de transport (moindre empreinte carbone)",
                 "social":"Renforcement du lien avec les consommateurs et le territoire, amélioration de l'image de l'agriculture, de la transparence et de la confiance avec la société",
@@ -147,7 +146,6 @@
             "effets" : {
                 "tour1" : {"environnement":1,"social":2,"economique":0}
             },
-            "exclusions" : [115],
             "justification" : {
                 "environnement":"Encourage une amélioration des pratiques pour être cohérent avec la vocation éducative",
                 "social":"Renforce le lien social, améliore l'image de l'exploitation",
@@ -163,7 +161,6 @@
             "effets" : {
                 "tour1" : {"environnement":1,"social":2,"economique":1}
             },
-            "exclusions" : [115],
             "justification" : {
                 "environnement":"Accès à des conseils techniques pouvant améliorer la gestion des intrants du sol ou du troupeau, diffusion de pratiques agroécologiques",
                 "social":"Renforce l'intégration dans un collectif professionnel et réduit l'isolement, confiance accrue entre acteurs agricoles",
@@ -228,7 +225,7 @@
                 "tour1" : {"environnement":-2,"social":-1,"economique":1},
                 "tour2" : {"environnement":0,"social":0,"economique":-2}
             },
-            "exclusions" : [16,51],
+            "exclusions" : [51],
             "justification" : {
                 "environnement":"Emission liée à la fabrication et l'usage des engrais azotés, pollution aux nitrates des eaux",
                 "social":"Opposition aux attentes sociétales (qualité de l'eau, climat)",
@@ -558,7 +555,6 @@
                 "tour2" : {"environnement":0,"social":0,"economique":1}
             },
             "exclusions" : [23,24,32,50],
-            "prerequis": { "tous":[24,50]},
             "justification" : {
                 "environnement":"Diminution des impacts sur les sols, l'eau et la biodiversité, meilleure résilience des agroécosystèmes",
                 "social":"Meilleure image de l'exploitation, renforcement du lien avec les consommateurs",
@@ -714,6 +710,30 @@
             "effets" : {
                 "tour1" : {"environnement":0,"social":0,"economique":0}
             }
+        },
+        {
+            "id" :12,
+            "type" : "joker",
+            "dimension" : "social",
+            "titre" : "Joker",
+            "definition" : "Copie la carte 'Action - Social' d'une autre équipe/joueur",
+            "effet_special" : "Copie une carte d'une autre équipe/joueur"
+        },
+        {
+            "id" :33,
+            "type" : "joker",
+            "dimension" : "economique",
+            "titre" : "Joker",
+            "definition" : "Copie la carte 'Action - Economique' d'une autre équipe/joueur",
+            "effet_special" : "Copie une carte d'une autre équipe/joueur"
+        },
+        {
+            "id" :54,
+            "type" : "joker",
+            "dimension" : "environnement",
+            "titre" : "Joker",
+            "definition" : "Copie la carte 'Action - Environnement' d'une autre équipe/joueur",
+            "effet_special" : "Copie une carte d'une autre équipe/joueur"
         }
     ]
 }
