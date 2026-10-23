@@ -176,7 +176,6 @@
             "effets" : {
                 "tour1" : {"environnement":0,"social":2,"economique":-1}
             },
-            "exclusions" : [1,2],
             "justification" : {
                 "environnement":"Pas d'impact sur les pratiques",
                 "social":"Amélioration du bien-être de l'exploitant (repos, congés, imprévus)",
@@ -208,7 +207,6 @@
             "effets" : {
                 "tour1" : {"environnement":-1,"social":0,"economique":0}
             },
-            "exclusions" : [43,51,52],
             "justification" : {
                 "environnement":"Baisse de la diversité temporelle des cultures, risque accru de pression maladies, adventices et ravageurs, dégradation de la fertilité des sols, pression accrue sur les intrants",
                 "social":"Pas d'effet",
@@ -225,7 +223,6 @@
                 "tour1" : {"environnement":-2,"social":-1,"economique":1},
                 "tour2" : {"environnement":0,"social":0,"economique":-2}
             },
-            "exclusions" : [51],
             "justification" : {
                 "environnement":"Emission liée à la fabrication et l'usage des engrais azotés, pollution aux nitrates des eaux",
                 "social":"Opposition aux attentes sociétales (qualité de l'eau, climat)",
@@ -241,7 +238,7 @@
             "effets" : {
                 "tour1" : {"environnement":1,"social":0,"economique":1}
             },
-            "exclusions" : [23,51],
+            "exclusions" : [23],
             "justification" : {
                 "environnement":"Limitation des excès grâce à une gestion raisonnée, préservation progressive de la fertilité du sol",
                 "social":"Pas d'effet",
@@ -306,7 +303,6 @@
                 "tour1" : {"environnement":0,"social":0,"economique":1},
                 "tour2" : {"environnement":-1,"social":0,"economique":1}
             },
-            "exclusions" : [48,51],
             "justification" : {
                 "environnement":"A long terme, cela demande plus d'intrants et diminue la diversité génétique",
                 "social":"Pas d'effet",
@@ -371,7 +367,6 @@
             "effets" : {
                 "tour1" : {"environnement":-2,"social":0,"economique":1}
             },
-            "exclusions" : [30,50,51],
             "justification" : {
                 "environnement":"Pression sur la biodiversité fonctionnelle, risque de pollution de l'eau, de l'air et d'effets sur les sols, risque de résistance",
                 "social":"Risque pour les travailleurs lors des applications",
@@ -472,7 +467,7 @@
                 "tour1" : {"environnement":0,"social":1,"economique":0},
                 "tour2" : {"environnement":2,"social":0,"economique":1}
             },
-            "exclusions" : [46],
+            "exclusions" : [43,46],
             "justification" : {
                 "environnement":"Amélioration de la biodiversité fonctionnelle, réduction potentielle de la dérive des produits phytos et du ruissellement",
                 "social":"Effets sur le paysage, perception positive par la société",
@@ -488,7 +483,6 @@
             "effets" : {
                 "tour1" : {"environnement":-1,"social":0,"economique":-1}
             },
-            "exclusions" : [44,45],
             "justification" : {
                 "environnement":"Perturbation de la structure du sol, risque d'érosion, diminution de la vie biologique du sol",
                 "social":"Pas d'effets",
@@ -537,7 +531,7 @@
             "effets" : {
                 "tour1" : {"environnement":1,"social":1,"economique":1}
             },
-            "exclusions" : [32,51],
+            "exclusions" : [32],
             "justification" : {
                 "environnement":"Diminution des impacts sur les sols, l'eau et la biodiversité",
                 "social":"Amélioration de la sécurité sanitaire pour l'agriculteur et les riverains, meilleure image auprès de la société et des consommateurs",
@@ -555,6 +549,7 @@
                 "tour2" : {"environnement":0,"social":0,"economique":1}
             },
             "exclusions" : [23,24,32,50],
+            "prerequis" : {"un_parmi":[24,50]}
             "justification" : {
                 "environnement":"Diminution des impacts sur les sols, l'eau et la biodiversité, meilleure résilience des agroécosystèmes",
                 "social":"Meilleure image de l'exploitation, renforcement du lien avec les consommateurs",
