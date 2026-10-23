@@ -549,7 +549,7 @@
                 "tour2" : {"environnement":0,"social":0,"economique":1}
             },
             "exclusions" : [23,24,32,50],
-            "prerequis" : {"un_parmi":[24,50]}
+            "prerequis" : {"un_parmi":[24,50]},
             "justification" : {
                 "environnement":"Diminution des impacts sur les sols, l'eau et la biodiversité, meilleure résilience des agroécosystèmes",
                 "social":"Meilleure image de l'exploitation, renforcement du lien avec les consommateurs",
