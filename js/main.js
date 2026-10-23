@@ -24,7 +24,9 @@ async function start() {
     // Load and display the card titles
     const data = await loadCards();
     displayCards(data.cartes);
-    console.log(canPlay(data.cartes.find(card => card.id === 3),[41,24,51],data.cartes))
+    console.log(canPlay(data.cartes.find(card => card.id === 3),[41,24,51],data.cartes));
+    console.log(addEffects({"environnement":19,"economique":1,"social":8},{"environnement":2,"economique":2,"social":0}));
+    console.log(roundEffects(plays = [{id: 8, round: 1}, {id: 3, round: 1}, {id: 1, round: 2}],data.cartes,4))
 }
 
 start();
