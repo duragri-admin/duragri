@@ -1,3 +1,13 @@
+//-------------
+// Variables
+//-------------
+let cards = [];
+let plays = [];
+
+//-------------
+// Functions
+//-------------
+
 async function loadCards(sort=true) {
     // Load cards
     const response = await fetch("data/cartes.json");
@@ -50,20 +60,51 @@ function displayScores(plays,cards){
 
 }
 
+function fillCardSelect(){
+    // IDs of played cards
+    const history = plays.map(p => p.id);
+    // Still playable "action" cards
+    const playable = cards.filter(c => c.type === "action" && canPlay(c,history,cards));
+
+    // Fill selectable list
+    const select = document.getElementById("card-select");
+    select.textContent="";
+    for (const card of playable){
+        const option = document.createElement("option");
+        option.value = card.id;
+        option.textContent = card.id + " - "+ card.titre;
+        select.appendChild(option);
+    }
+}
+
+function playCard(){
+    // Retrieve played card and round
+    const id = Number(document.getElementById("card-select").value);
+    const round = Number(document.getElementById("round-select").value);
+
+    // Add played card to the list of already played cards
+    plays.push({id:id,round:round});
+
+    // Refresh
+    displayScores(plays,cards);
+    fillCardSelect();
+}
+
 async function start() {
     // Load and display the card titles
     const data = await loadCards();
-    displayCards(data.cartes);
+    cards = data.cartes;
 
-    // Test of the different functions
-    //console.log(canPlay(data.cartes.find(card => card.id === 3),[41,24,51],data.cartes));
-    //console.log(addEffects({"environnement":19,"economique":1,"social":8},{"environnement":2,"economique":2,"social":0}));
-    //console.log(roundEffects(plays = [{id: 8, round: 1}, {id: 3, round: 1}, {id: 1, round: 2}],data.cartes,4));
-    //console.log(finalScore({environnement:8,social:8,economique:8}));
-    //console.log(scoresByRound(plays = [{id: 8, round: 1}, {id: 3, round: 1}, {id: 1, round: 2}],data.cartes,round=4, start = 8));
+    document.getElementById("play-button").addEventListener("click",playCard)
 
-    const plays = [{id: 8, round: 1}, {id: 3, round: 1}, {id: 1, round: 2}];
+    fillCardSelect();
     displayScores(plays,data.cartes);
+
+    displayCards(data.cartes);
 }
 
+
+//-------------
+// Content
+//-------------
 start();

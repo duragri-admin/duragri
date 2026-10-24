@@ -9,7 +9,23 @@
         <h1>Duragri</h1>
         <h2>Un jeu pour sensibiliser à l'agriculture durable chez les adolescents</h2>
 
+        <!--Play a card-->
+        <h3>Jouer une carte</h3>
+        <label>Tour :
+            <select id="round-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </label>
+        <label>Carte :
+            <select id="card-select"></select>
+        </label>
+        <button id="play-button">Jouer</button>
         <!--Scores table-->
+        <h3>Tableau des scores</h3>
         <table id="scores-table">
             <thead>
                 <tr><th>Tour</th><th>Environnement</th><th>Social</th><th>Économique</th><th>Score</th></tr>
