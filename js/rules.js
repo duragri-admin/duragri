@@ -67,3 +67,25 @@ function roundEffects(plays,cards,round){
 
     return total;
 }
+
+function scoresByRound(plays,cards,rounds = 5, start = 8) {
+    // 1. Start scores
+    let scores = {environnement:start,social:start,economique:start};
+    // 2. List of scores
+    const list = [scores];
+    // 3. One loop per round
+    for (let r = 1; r <= rounds; r++) {
+        // 3a. Total effect of round
+        const effects = roundEffects(plays,cards,r);
+        // 3b. New scores
+        scores = addEffects(scores,effects);
+        // 3c. Add new scores to list
+        list.push(scores);
+    }
+    // 4. Return list of scores
+    return list;
+}
+
+function finalScore(scores) {
+    return Math.cbrt(scores.economique*scores.environnement*scores.social);
+}
