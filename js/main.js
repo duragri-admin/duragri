@@ -5,6 +5,12 @@ let cards = [];
 let plays = [];
 
 //-------------
+// Constants
+//-------------
+
+const MAX_CARDS_PER_ROUND = 2;
+
+//-------------
 // Functions
 //-------------
 
@@ -78,14 +84,34 @@ function fillCardSelect(){
 }
 
 function playCard(){
+    // Prevent error if there is not playable card left
+    const select = document.getElementById("card-select");
+    if (select.value === ""){return;}
     // Retrieve played card and round
-    const id = Number(document.getElementById("card-select").value);
+    const id = Number(select.value);
     const round = Number(document.getElementById("round-select").value);
 
+    // Check number of cards played in this round
+    const cardsThisRound = plays.filter(p => p.round === round).length;
+    const message = document.getElementById("message");
+    message.textContent = "";
+    if (cardsThisRound >= MAX_CARDS_PER_ROUND){
+        document.getElementById("message").textContent = "Maximum " + MAX_CARDS_PER_ROUND + " cartes par tour";
+        return;
+    }
+    
     // Add played card to the list of already played cards
     plays.push({id:id,round:round});
 
     // Refresh
+    displayScores(plays,cards);
+    fillCardSelect();
+}
+
+function resetGame(){
+    plays = [];
+    document.getElementById("message").textContent = "";
+
     displayScores(plays,cards);
     fillCardSelect();
 }
@@ -95,12 +121,13 @@ async function start() {
     const data = await loadCards();
     cards = data.cartes;
 
-    document.getElementById("play-button").addEventListener("click",playCard)
+    document.getElementById("play-button").addEventListener("click",playCard);
+    document.getElementById("reset-button").addEventListener("click",resetGame);
 
     fillCardSelect();
-    displayScores(plays,data.cartes);
+    displayScores(plays,cards);
 
-    displayCards(data.cartes);
+    displayCards(cards);
 }
 
 
